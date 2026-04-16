@@ -13,12 +13,6 @@ export default StyleSheet.create({
         borderRadius: 10,
         padding: 10
     },
-
-    imagem: {
-    width: '100%',
-    height: 400,
-    resizeMode: 'contain',
-    },
     
     titulo: {
         fontSize: 22,
@@ -30,6 +24,13 @@ export default StyleSheet.create({
         fontSize: 18,
         color: 'black'
 
+    },
+
+    imagem: {
+    width: '100%',
+    aspectRatio: 1,
+    height: 400,
+    resizeMode: 'contain',
     },
 
     input: {

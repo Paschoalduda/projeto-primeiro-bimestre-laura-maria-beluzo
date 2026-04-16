@@ -20,10 +20,10 @@ export default function Perfil(){
         />
 
         <Button
-            style={styles.button}
-            title="Entrar"
-            onPress={() => alert('Entrou no seu perfil ')}
-        />
+        title="Entrar"
+        color="#6f0000"
+        onPress={() => alert('Entrou no seu perfil!')}
+      />
     </View>
   )
 }
