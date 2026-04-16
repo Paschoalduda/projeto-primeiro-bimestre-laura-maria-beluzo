@@ -15,17 +15,11 @@ export default StyleSheet.create({
     },
 
     imagem: {
-        width: '35%',
-        height: 280,
-        borderRadius: 10
+    width: '100%',
+    height: 400,
+    resizeMode: 'contain',
     },
-
-    imagemhome: {
-        width: '100%',
-        height: 150,
-        borderRadius: 10
-    },
-
+    
     titulo: {
         fontSize: 22,
         fontWeight: 'bold',
@@ -52,4 +46,5 @@ export default StyleSheet.create({
         padding: 12,
         borderRadius: 8
     }
+
 })
