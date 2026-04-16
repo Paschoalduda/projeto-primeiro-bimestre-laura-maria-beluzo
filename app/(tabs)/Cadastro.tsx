@@ -1,17 +1,34 @@
 import { View, Text, TextInput, Button } from 'react-native'
-import React, {useState} from "react"
-import { StyleSheet } from 'react-native'
-import estilos from '../estilos/estilos.js' 
-
+import styles from '../style/style.js'
 
 export default function Cadastro(){
-    return(
-        <View>
-            <Text>Cadastro de pratos</Text>
-            <TextInput placeholder="Digite o nome do prato"/>
-            <TextInput placeholder="Digite a descrição e ingredientes do prato" />
-            <TextInput placeholder="Digite o preço do prato" /> 
-            <Button title="Cadastrar" onPress={() => alert("Prato Salvo com sucesso!")} />
-        </View>
-    )
+  return(
+    <View style={styles.container}>
+        
+        <Text style={styles.titulo}>
+            Cadastro de Produto
+        </Text>
+      
+        <TextInput
+        style={styles.input}
+        placeholder="Nome do Prato"
+        />
+
+        <TextInput
+        style={styles.input}
+        placeholder="Descrição"
+        />
+
+        <TextInput
+        style={styles.input}
+        placeholder="Preço"
+        />
+
+        <Button
+        style={styles.button}
+        title="Cadastrar no cardápio"
+        onPress={() => alert('Produto cadastrado com sucesso!')}
+        />
+    </View>
+  )
 }

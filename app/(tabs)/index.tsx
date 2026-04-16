@@ -1,23 +1,12 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
-import { Tabs } from 'expo-router'
-import estilos from '../estilos/estilos.js'
+import { Text, ImageBackground } from 'react-native'
+import styles from '../style/style.js'
 
-export default function Home(){
-    return(
-        <View>
-            <Image source={require('../../assets/images/principal.jpg')} />
-        </View>
-            
-    )
+export default function Inicio(){
+  return(
+    <ImageBackground
+      source={require('../../assets/images/principal.jpg')}
+      style={{ width: '100%', flex: 1, height: '100%' }}
+    >
+    </ImageBackground>
+  )
 }
-    
-export const styles = StyleSheet.create({
-  caixa:{
-    backgroundColor:'red',
-    padding:20
-  },
-  viewGeral:{
-    padding:20
-  }
-})
-
